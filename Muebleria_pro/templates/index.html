@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Muebleria ProHogar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"><link rel="stylesheet" href="./style.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <link rel="stylesheet" href="fonts/">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="main-header">
+
+      <div id="inicio" class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__title">Muebleria ProHogar</h1>
+          <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+              <li class="menu__item"><a href="#nosotros" class="menu__link">NOSOTROS</a></li>
+              <li class="menu__item"><a href="#catalogo" class="menu__link">CATALOGO</a></li>
+              <li class="menu__item"><a href="#contacto" class="menu__link">CONTACTO</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__container">
+          <span class="main-header__txt">Necesitas ayuda</span>
+          <p class="main-header__txt"> <i class="fas fa-phone">  </i>Llama</p>
+          <p>241-158-37-24</p>
+        </div>
+        <div class="main-header__container">
+          <li class="nav-item dropdown">
+            <i class="fa fa-calculator" class="nav-link dropdown-toggle img-fluid" height="100px"
+            width="100px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"></i>
+            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                <table id="lista-carrito" class="table">
+                    <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar calculadora </a>
+                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Calcular Compra</a>
+            </div>
+      </div>
+    </header>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Los mejores muebles</h2>
+            <p class="slider__txt">Solo con nosotros</p>
+            <a href="" class="btn-shop">Compra hoy</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="./img/porta.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Los mejores muebles</h2>
+            <p class="slider__txt">Solo con nosotros</p>
+            <a href="#catalogo" class="btn-shop">Compra hoy</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="./img/std-20191219-2.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Los mejores muebles</h2>
+            <p class="slider__txt">Solo con nosotros</p>
+            <a href="" class="btn-shop">Compra hoy</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="./img/full_Aplicación_MSD_Muebleria_Mexico.tif.jpeg" alt="" class="slider__img">
+          <div class="slider__content">
+            <h2 class="slider__title">Los mejores muebles</h2>
+            <p class="slider__txt">Solo con nosotros</p>
+            <a href="#catalogo" class="btn-shop">Compra hoy</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+  
+    <main>
+      <div id="catalogo" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+          <h1 class="display-4 mt-4">Visualiza nuestro catalogo</h1>
+          <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+      </div>
+
+      <div class="container" id="lista-productos">
+          
+          <div class="card-deck mb-3 text-center">
+              
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Lavadora</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/Lavadora.jpeg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">5000</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>16KG</li>
+                          <li>COLOR NEGRO</li>
+                          <li>Con secadora</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Agregar</a>
+                  </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Licuadora Oster </h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/licuadora (2).jpeg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">749</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>Automatica</li>
+                          <li>COLOR NEGRO</li>
+                          <li>10 velocidades</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Agregar</a>
+                  </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">microondas</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/microondas.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">4000</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>Economico</li>
+                          <li>COLOR GRIS CON NEGRO</li>
+                          <li>Con temporizador</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Agregar</a>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="card-deck mb-3 text-center">
+              
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Comedor</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/comedor.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">5900</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>6 sillas</li>
+                          <li>COLOR madera</li>
+                          <li>Acolchonado</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Agregar</a>
+                  </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Base de cama</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/Bases de cama.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">5769</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>Cabezera</li>
+                          <li>COLOR CHOCOLATE</li>
+                          <li>Matrimonial</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Agregar</a>
+                  </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Pantalla</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/pantalla.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">2599</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>35 pulgadas</li>
+                          <li>COLOR NEGRO</li>
+                          <li>Full HD</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Agregar</a>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="card-deck mb-3 text-center">
+              
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Colchon</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/colchon.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">4299</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>SprinAir</li>
+                          <li>Color Blanco</li>
+                          <li>Hule espuma</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Agregar</a>
+                  </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Estufa</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/estufa.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">3700</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>Mabe</li>
+                          <li>COLOR NEGRO</li>
+                          <li>6 quemadores</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Agregar</a>
+                  </div>
+              </div>
+
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                      <h4 class="my-0 font-weight-bold">Ropero</h4>
+                  </div>
+                  <div class="card-body">
+                      <img src="./img/Roperoo.jpg" class="card-img-top">
+                      <h1 class="card-title pricing-card-title precio">$ <span class="">5397</span></h1>
+
+                      <ul class="list-unstyled mt-3 mb-4">
+                          <li></li>
+                          <li>MDF</li>
+                          <li>COLOR MADERA</li>
+                          <li>Amplios cajones</li>
+                      </ul>
+                      <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Agregar</a>
+                  </div>
+                 </div>
+
+                 
+                    </div>
+                  </div>
+  </main>
+    <footer id="nosotros" class="main-footer">
+      <div class="footer__section">
+        <h2 class="footer__title">Nosotros</h2>
+        <p class="footer__txt">Somos una empresa que se dedica a la venta de linea blanca. Visitanos en nuestra sucursal Av pinos 407.</p>
+      </div>
+      <div id="contacto" class="footer__section">
+        <h2 class="footer__title">Direccion</h2>
+        <p class="footer__txt">Av pinos 407, Apizaco Tlaxcala Mexico</p>
+        <h2 class="footer__title">Contacto</h2>
+        <p class="footer__txt">Telefono : 241-158-37-24</p>
+        <p class="footer__txt">Email : Prohogar19@hotmail.com</p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Links Rapidos</h2>
+        <a href="#inicio" class="footer__link">Inicio</a>
+        <a href="#nosotros" class="footer__link">Nosotros</a>
+        <a href="#catalogo" class="footer__link">Catalogo</a>
+        <a href="#contacto" class="footer__link">Contacto</a>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Siguenos para hacerte llegar nuestras ofertas.</h2>
+        <p class="footer__txt">Contactanos via Facebook</p>
+        <a href="https://www.facebook.com/mueblesapizaco" class="btn-shop">Contactanos</a>
+      </div>
+      <p class="copy">© 2022 °Luis Adrian Amador Martinez °Cristian Lopez Ramos °Brandon Muñoz Mazariegos
+      </p>
+    </footer>
+
+  <script  src="/dist/js/script.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+</html>
